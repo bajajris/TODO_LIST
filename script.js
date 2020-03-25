@@ -52,6 +52,7 @@ const displayTasks = () => {
 let add = document.getElementById("add");
 add.addEventListener('click', () => {
     addTask();
+    console.log("Commit");
 });
 document.addEventListener('keydown', (event) => {
     if (event.keyCode === 13) {
