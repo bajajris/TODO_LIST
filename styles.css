@@ -1,0 +1,88 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 70vh;
+    background-color: #80E478;
+}
+
+#innerTags {
+    display: inline-flex;
+    width: 80%;
+    margin-bottom: 10px;
+    justify-content: center;
+    /*! align-items: center; */
+}
+
+input[type=text] {
+    padding: 5px;
+    width: 80%;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+#add {
+    padding: 5px;
+    height: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    color: black;
+}
+
+.main {
+    width: 50%;
+    text-align: center;
+}
+
+#taskContainer {
+    display: flex;
+    flex-direction: column;
+    /*! justify-content: center; */
+    /*! align-content: center; */
+    align-items: center;
+}
+
+.error {
+    border: 4px inset red;
+}
+
+.correct {
+    border: 4px inset rgb(38, 172, 38);
+}
+
+.tasks {
+    border: 1px solid black;
+    box-shadow: 2px 1px 5px grey;
+    background-color: #56CA33;
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 70%;
+    padding: 8px;
+    /* text-align: left; */
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 30px;
+    grid-template-areas: "main main . . sidebar";
+}
+
+.closeBtn {
+    grid-area: sidebar;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-family: sans-serif;
+    /*! align-self: first baseline; */
+}
+
+.closeBtn:hover {
+    color: #ccc;
+}
+
+p {
+    grid-area: main;
+    align-self: center;
+    justify-self: start;
+}
