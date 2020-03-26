@@ -24,10 +24,8 @@ input[type=text] {
     padding: 5px;
     height: 40px;
     font-size: 18px;
-}
-
-h1 {
-    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .main {
@@ -85,4 +83,25 @@ p {
     grid-area: main;
     align-self: center;
     justify-self: start;
+}
+
+input[type=button] {
+    font-size: 1.4em;
+    background-color: white;
+    color: red;
+}
+
+input[type=button]:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#add:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 3px green;
+}
+
+input[type=text]:focus {
+    border: 5px groove rgb(29, 191, 255);
 }
