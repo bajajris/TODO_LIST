@@ -6,6 +6,7 @@ let closeButton;
 var divText;
 let taskList = [];
 taskClass = task.className;
+let clearBtn = document.getElementById("clear");
 
 const addTask = () => {
     // document.getElementById("taskContainer").innerHTML = "jsadjas";
@@ -67,4 +68,10 @@ document.addEventListener('click', function(e) {
         taskList.splice(x, 1);
         displayTasks();
     }
+});
+
+clearBtn.addEventListener('click', () => {
+    console.log(taskList.slice(0, 4));
+    taskList.splice(0);
+    displayTasks();
 });
